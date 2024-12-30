@@ -2,6 +2,7 @@
 
     .sidebar-two {
         z-index: -100;
+        display: none;
     }
     
     .sidebar {
