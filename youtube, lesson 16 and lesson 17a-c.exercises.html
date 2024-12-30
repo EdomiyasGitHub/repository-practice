@@ -1,0 +1,1061 @@
+<!-- Lesson 16 and 17a-c exercises are about this page, so I've chosen to include them 
+    in this page, rather than clone this entire project in new files -->
+
+<!-- Lesson 16 Exercises - Finish the Project -->
+
+<!-- Congrats, we're done! Some finishing thouches you can add for practice: -->
+
+
+<!-- Lesson 17. Exercises - More CSS Features -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>YouTube.com Clone</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- HEADER -->
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <header class="header">
+        <div class="left-section">
+            <img src="icons/hamburder icon.svg" alt="" class="hamburger-menu">
+            <img src="icons/YouTube_Logo_2017.svg.png" alt="" class="youtube-logo">
+        </div>
+
+
+        <div class="middle-section">
+            <input class="search-bar" type="text" placeholder="Search">
+
+            <button class="search-button">
+                <img src="icons/search icon.svg" alt="" class="search-icon">
+                <div class="tooltip">Search</div>
+            </button>
+
+            <button class="voice-search-button">
+                <img src="icons/voice icon.svg" alt="" class="voice-icon">
+                <div class="tooltip">Search with your voice</div>
+            </button>
+        </div>
+
+        
+        <div class="right-section">
+            <button class="create-button">
+                <img src="icons/add icon.svg" alt="" class="add-icon">
+                Create
+            </button>
+
+            <div class="notification-container">
+                <img src="icons/bell icon.svg" alt="" class="notifications-icon">
+                <div class="notification-count">3</div>
+
+                <!-- 16.a Add the remaining tooltips in the header -->
+                <div class="tooltip">Notifications</div>
+            </div>
+
+            <img src="channel-pictures/edomiyas 2.jpg" alt="" class="my-profile-picture">
+        </div>
+    </header>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- SIDEBAR -->
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <nav class="sidebar">
+        <div class="sidebar-link">
+            <img src="icons/home icon.svg" alt="" class="home-icon">
+            <div>Home</div>
+        </div>
+
+        <div class="sidebar-link">
+            <img src="icons/shorts icon.svg" alt="" class="shorts-icon">
+            <div>Shorts</div>
+        </div>
+
+        <div class="sidebar-link">
+            <img src="icons/subscriptions icon 2.svg" alt="" class="subscriptions-icon">
+            <div>Subscriptions</div>
+        </div>
+
+        <div class="sidebar-link">
+            <img src="icons/library icon.svg" alt="" class="library-icon">
+            <div>Library</div>
+        </div>
+
+        <div class="sidebar-link">
+            <img src="icons/account icon.svg" alt="" class="account-icon">
+            <div>You</div>
+        </div>
+    </nav>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- Challenge Exercises -->
+    <!-- 17c. Using responsive design, create this expanded sidebar design when the page 
+        is >= 1200px wide
+        • Wrap all the CSS code in sidebar.css in @media (max-width: 1200px) {...} 
+        • Re-style the sidebar for the wider screen and put that code 
+        inside @media (min-width: 12000.1px) -->
+    <nav class="sidebar-two">
+        <div class="sidebar-two-header">
+            <img src="icons/hamburder icon.svg" alt="" class="hamburger-menu-two">
+            <img src="icons/YouTube_Logo_2017.svg.png" alt="" class="youtube-logo-two">
+        </div>
+
+<!-- -------------------------------------------------------------------------------------------------- -->
+        <div class="sidebar-two-main-section">
+            <div class="sidebar-link-two">
+                <img src="icons/home icon.svg" alt="" class="home-icon-two">
+                <div>Home</div>
+            </div>
+
+            <div class="sidebar-shorts-link-two">
+                <img src="icons/shorts icon.svg" alt="" class="shorts-icon-two">
+                <div>Shorts</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="icons/subscriptions icon 2.svg" alt="" class="subscriptions-icon-two">
+                <div>Subscriptions</div>
+            </div>
+
+            <div class="divider">
+                _____________________________
+            </div>
+        </div>
+
+<!-- -------------------------------------------------------------------------------------------------- -->
+
+        <div class="sidebar-two-you-section">
+            <div class="sidebar-two-you">
+                <div>You</div>
+                <img src="icons/arrow icon.svg" alt="" class="arrow-icon">
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="icons/history icon.svg" alt="" class="history-icon">
+                <div>History</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="icons/playlists icon.svg" alt="" class="playlists-icon">
+                <div>Playlists</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="icons/videos icon.svg" alt="" class="your-videos-icon">
+                <div>Your videos</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="icons/podcast icon.svg" alt="" class="your-podcasts-icon">
+                <div>Your podcasts</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="icons/watch later icon.svg" alt="" class="watch-later-icon">
+                <div>Watch later</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="icons/like icon.svg" alt="" class="liked-videos-icon">
+                <div>Liked videos</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="icons/clips icon.svg" alt="" class="your-clips-icon">
+                <div>Your clips</div>
+            </div>
+
+            <div class="divider">
+                _____________________________
+            </div>
+        </div>
+
+<!-- -------------------------------------------------------------------------------------------------- -->
+
+        <div class="sidebar-three-you-section">
+            <div class="sidebar-two-you">
+                <div>Subscriptions</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="channel-pictures/Corridor Crew.jpg" alt="" class="history-icon">
+                <div>Corridor Crew</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="channel-pictures/Stuff Made Here.jpg" alt="" class="playlists-icon">
+                <div>Stuff Made Here</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="channel-pictures/Fireship.jpg" alt="" class="your-videos-icon">
+                <div>Fireship</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="channel-pictures/oversimplified.png" alt="" class="your-podcasts-icon">
+                <div>Oversimplified</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="channel-pictures/Coffeezilla.jpg" alt="" class="watch-later-icon">
+                <div>Coffeezilla</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="channel-pictures/Horses.jpg" alt="" class="liked-videos-icon">
+                <div>Horses</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="channel-pictures/Local Script Man.jpg" alt="" class="your-clips-icon">
+                <div>Local Script Man</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="icons/arrow icon.svg" alt="" class="down-arrow-icon">
+                <div>Show More</div>
+            </div>
+
+            <div class="divider">
+                _____________________________
+            </div>
+        </div>
+
+<!-- -------------------------------------------------------------------------------------------------- -->
+
+        <div class="sidebar-four-you-section">
+            <div class="sidebar-two-you">
+                <div>Explore</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="icons/trending icon.svg" alt="" class="history-icon">
+                <div>Trending</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="icons/music icon.svg" alt="" class="playlists-icon">
+                <div>Music</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="icons/live icon.svg" alt="" class="your-videos-icon">
+                <div>Live</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="icons/gaming icon.svg" alt="" class="your-podcasts-icon">
+                <div>Gaming</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="icons/news icon.svg" alt="" class="watch-later-icon">
+                <div>News</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="icons/sports icon.svg" alt="" class="liked-videos-icon">
+                <div>Sports</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="icons/learning icon.svg" alt="" class="your-clips-icon">
+                <div>Learning</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="icons/fashion & beauty icon.svg" alt="" class="gaming-icon">
+                <div>Fashion & Beauty</div>
+            </div>
+
+            <div class="divider">
+                _____________________________
+            </div>
+        </div>
+
+<!-- -------------------------------------------------------------------------------------------------- -->
+
+        <div class="sidebar-five-you-section">
+            <div class="sidebar-two-you">
+                <div>More from YouTube</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="icons/YouTube_Studio_gradient.webp" alt="" class="history-icon">
+                <div>YouTube Studio</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="icons/youtube kids icon.svg" alt="" class="playlists-icon">
+                <div>YouTube Kids</div>
+            </div>
+
+            <div class="divider">
+                _____________________________
+            </div>
+        </div>
+
+<!-- -------------------------------------------------------------------------------------------------- -->
+
+        <div class="sidebar-six-you-section">
+
+            <div class="sidebar-link-two">
+                <img src="icons/settings icon.svg" alt="" class="history-icon">
+                <div>Settings</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="icons/flag icon.svg" alt="" class="gaming-icon">
+                <div>Report history</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="icons/help icon.svg" alt="" class="gaming-icon">
+                <div>Help</div>
+            </div>
+
+            <div class="sidebar-link-two">
+                <img src="icons/feedback icon.svg" alt="" class="your-podcasts-icon">
+                <div>Send feedback</div>
+            </div>
+
+            <div class="divider">
+                _____________________________
+            </div>
+        </div>
+
+<!-- -------------------------------------------------------------------------------------------------- -->
+
+        <div class="sidebar-seven-you-section">
+
+            <div class="first-info">
+                <p class="about">About</p>
+                <p class="press">Press</p>
+                <p class="copyright">Copyright</p>
+                <p class="contact-us">Contact us</p>
+                <p class="creators">Creators</p>
+                <p class="advertise">Advertise</p>
+                <p class="developers">Developers</p>
+            </div>
+
+            <div class="second-info">
+                <p class="terms">Terms</p>
+                <p class="privacy">Privacy</p>
+                <p class="policy-and-safety">Policy & Safety</p>
+                <p class="how-youtube-works">How YouTube works</p>
+                <p class="test-new-features">Test new features</p>
+            </div>
+
+            <div class="company">
+                &copy; 2024 Google LLC
+            </div>
+        </div>
+    </nav>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- MAIN -->
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <main>
+        <section class="video-grid">
+
+            <!-- 16b. Make the video title a link to the actual Youtube video -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+    
+                    <!-- 16c. Turn the video thubmnails and channel pictures into links -->
+                    <a href="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=145s" class="thumbnail-link">
+                        <img class="thumbnail" src="thumbnails/HTML & CSS Full Course - Beginner to Pro - SuperSimple.jpg">
+                    </a>
+    
+                    <div class="video-time">6:31:23</div>
+                </div>
+    
+        
+                <div class="video-info-grid">
+        
+                    <!-- 16d. Using everything we learned in this course, create tooltips for 
+                        the channel pictures like the design below -->
+                    <div class="channel-picture">
+    
+                        <a href="https://www.youtube.com/@SuperSimpleDev" class="channel-page-link">
+                            <img src="channel-pictures/SuperSimpleDev.jpg" alt="" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-preview">
+                            <div class="channel-picture-2">
+                                <img src="channel-pictures/SuperSimpleDev.jpg" alt="" class="profile-picture-2">
+                            </div>
+                            <div class="channel-info">
+                                <div class="channel-name">
+                                    SuperSimpleDev
+                                </div>
+    
+                                <div class="subscriber-count">
+                                    567K subscribers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=145s" class="video-title">
+                            HTML & CSS Full Course - Beginner to Pro
+                        </a>
+    
+                        <div class="video-author-container">
+                            <p class="video-author">SuperSimpleDev</p> 
+                            
+                            <div class="verified-container">
+                                <img src="icons/check mark icon.svg" alt="" class="verified-icon">
+                                <div class="video-tooltip">Verified</div>
+                            </div>
+                        </div>
+                
+                        <p class="video-stats">
+                            13M views &#183; 2 years ago 
+                        </p>
+                    </div>
+                </div> 
+            </div>
+    
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+        
+            <div class="video-preview">
+                <div class="thumbnail-row">
+    
+                    <a href="https://www.youtube.com/watch?v=ZB5Tn6pLogc" class="thumbnail-link">
+                        <img class="thumbnail" src="thumbnails/Making coffee from scratch (is hard) - NileBlue.jpg">
+                    </a>
+    
+                    <div class="video-time">38:34</div>
+                </div>
+        
+                <div class="video-info-grid">
+        
+                    <div class="channel-picture">
+    
+                        <a href="https://www.youtube.com/@NileBlue" class="channel-page-link">
+                            <img src="channel-pictures/NileBlue.jpg" alt="" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-preview">
+                            <div class="channel-picture-2">
+                                <img src="channel-pictures/NileBlue.jpg" alt="" class="profile-picture-2">
+                            </div>
+                            <div class="channel-info">
+                                <div class="channel-name">
+                                    NileBlue
+                                </div>
+    
+                                <div class="subscriber-count">
+                                    2.63M subscribers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://www.youtube.com/watch?v=ZB5Tn6pLogc" class="video-title">
+                            Making coffee from scratch (is hard)
+                        </a>
+                
+                        <div class="video-author-container">
+                            <p class="video-author">NileBlue</p> 
+                            
+                            <div class="verified-container">
+                                <img src="icons/check mark icon.svg" alt="" class="verified-icon">
+                                <div class="video-tooltip">Verified</div>
+                            </div>
+                        </div>
+                
+                        <p class="video-stats">
+                            2.1M views &#183; 2 days ago 
+                        </p>
+                    </div>
+                </div> 
+            </div>
+        
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+        
+            <div class="video-preview">
+                <div class="thumbnail-row">
+    
+                    <a href="https://www.youtube.com/watch?v=O1rMZkk7fBE" class="thumbnail-link">
+                        <img class="thumbnail" src="thumbnails/Create a VOX style Documentary in Canva - Lilly's Tech Tips.jpg">
+                    </a>
+    
+                    <div class="video-time">14:08</div>
+                </div>
+        
+                <div class="video-info-grid">
+        
+                    <div class="channel-picture">
+    
+                        <a href="https://www.youtube.com/@LillysTechTips" class="channel-page-link">
+                            <img src="channel-pictures/Lilly's Tech Tips.jpg" alt="" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-preview">
+                            <div class="channel-picture-2">
+                                <img src="channel-pictures/Lilly's Tech Tips.jpg" alt="" class="profile-picture-2">
+                            </div>
+                            <div class="channel-info">
+                                <div class="channel-name">
+                                    Lilly's Tech Tips
+                                </div>
+    
+                                <div class="subscriber-count">
+                                    11.5K subscribers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://www.youtube.com/watch?v=O1rMZkk7fBE" class="video-title">
+                            Create a VOX style Documentary in Canva
+                        </a>
+                
+                        <p class="video-author">
+                            Lilly's Tech Tips
+                        </p>
+                
+                        <p class="video-stats">
+                            92K views &#183; 4 months ago 
+                        </p>
+                    </div>
+                </div> 
+            </div>
+        
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+        
+            <div class="video-preview">
+                <div class="thumbnail-row">
+    
+                    <a href="https://www.youtube.com/watch?v=szB0AwH5o1A" class="thumbnail-link">
+                        <img class="thumbnail" src="thumbnails/i really need a good day - playlist - Bobby Nsenga.jpg">
+                    </a>
+    
+                    <div class="video-time">34:52</div>
+                </div>
+        
+                <div class="video-info-grid">
+        
+                    <div class="channel-picture">
+    
+                        <a href="https://www.youtube.com/@BobbyNsenga" class="channel-page-link">
+                            <img src="channel-pictures/Bobby Nsenga.jpg" alt="" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-preview">
+                            <div class="channel-picture-2">
+                                <img src="channel-pictures/Bobby Nsenga.jpg" alt="" class="profile-picture-2">
+                            </div>
+                            <div class="channel-info">
+                                <div class="channel-name">
+                                    Bobby Nsenga
+                                </div>
+    
+                                <div class="subscriber-count">
+                                    846K subscribers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://www.youtube.com/watch?v=szB0AwH5o1A" class="video-title">
+                            i really need a good day - playlist 
+                        </a>
+                
+                        <div class="video-author-container">
+                            <p class="video-author">Bobby Nsenga</p> 
+                            
+                            <div class="verified-container">
+                                <img src="icons/check mark icon.svg" alt="" class="verified-icon">
+                                <div class="video-tooltip">Verified</div>
+                            </div>
+                        </div>
+                
+                        <p class="video-stats">
+                            252K views &#183; 1 month ago 
+                        </p>
+                    </div>
+                </div> 
+            </div>
+        
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+        
+            <div class="video-preview">
+                <div class="thumbnail-row">
+    
+                    <a href="https://youtu.be/OUM6XmhViN4?si=LG-GE4u4dTwyckAV" class="thumbnail-link">
+                        <img class="thumbnail" src="thumbnails/I Redesigned the ENTIRE YouTube UI from Scratch - Juxtopposed.jpg">
+                    </a>
+    
+                    <div class="video-time">19:10</div>
+                </div>
+        
+                <div class="video-info-grid">
+        
+                    <div class="channel-picture">
+    
+                        <a href="https://www.youtube.com/@Juxtopposed" class="channel-page-link">
+                            <img src="channel-pictures/Juxtopposed.jpg" alt="" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-preview">
+                            <div class="channel-picture-2">
+                                <img src="channel-pictures/Juxtopposed.jpg" alt="" class="profile-picture-2">
+                            </div>
+                            <div class="channel-info">
+                                <div class="channel-name">
+                                    Juxtopposed
+                                </div>
+    
+                                <div class="subscriber-count">
+                                    322K subscribers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://youtu.be/OUM6XmhViN4?si=LG-GE4u4dTwyckAV" class="video-title">
+                            I Redesigned the ENTIRE YouTube UI from Scratch 
+                        </a>
+                
+                        <div class="video-author-container">
+                            <p class="video-author">Juxtopposed</p> 
+                            
+                            <div class="verified-container">
+                                <img src="icons/check mark icon.svg" alt="" class="verified-icon">
+                                <div class="video-tooltip">Verified</div>
+                            </div>
+                        </div>
+                
+                        <p class="video-stats">
+                            2.4M views &#183; 1 day ago 
+                        </p>
+                    </div>
+                </div> 
+            </div>
+        
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+            
+            <div class="video-preview">
+                <div class="thumbnail-row">
+    
+                    <a href="https://youtu.be/6g5qFZAUGoY?si=MvNZpxf3DuIvWY_1" class="thumbnail-link">
+                        <img class="thumbnail" src="thumbnails/CIA Confirmed Life on Mars - penguinz0.jpg">
+                    </a>
+    
+                    <div class="video-time">9:29</div>
+                </div>
+        
+                <div class="video-info-grid">
+        
+                    <div class="channel-picture">
+    
+                        <a href="https://www.youtube.com/@penguinz0" class="channel-page-link">
+                            <img src="channel-pictures/Penguinz0.webp" alt="" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-preview">
+                            <div class="channel-picture-2">
+                                <img src="channel-pictures/Penguinz0.webp" alt="" class="profile-picture-2">
+                            </div>
+                            <div class="channel-info">
+                                <div class="channel-name">
+                                    Penguinz0
+                                </div>
+    
+                                <div class="subscriber-count">
+                                    16.3M subscribers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://youtu.be/6g5qFZAUGoY?si=MvNZpxf3DuIvWY_1" class="video-title">
+                            CIA Confirmed Life on Mars 
+                        </a>
+                
+                        <div class="video-author-container">
+                            <p class="video-author">penguinz0</p> 
+                            
+                            <div class="verified-container">
+                                <img src="icons/check mark icon.svg" alt="" class="verified-icon">
+                                <div class="video-tooltip">Verified</div>
+                            </div>
+                        </div>
+                
+                        <p class="video-stats">
+                            2.4M views &#183; 1 day ago 
+                        </p>
+                    </div>
+                </div> 
+            </div>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+            
+            <!-- 17b. (Optional) For more practice, add the last 6 videos from the 
+                final design into our grid so we have 12 videos in total -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+    
+                    <a href="https://youtu.be/3NobihsLsZ0?si=nKkyIZwGkVKGqBJT" class="thumbnail-link">
+                        <img class="thumbnail" src="thumbnails/How THIS Scene Became a Modern Masterpiece - Lancelloti.jpg">
+                    </a>
+    
+                    <div class="video-time">27:23</div>
+                </div>
+        
+                <div class="video-info-grid">
+        
+                    <div class="channel-picture">
+    
+                        <a href="https://www.youtube.com/@lancelloti." class="channel-page-link">
+                            <img src="channel-pictures/Lancelloti.jpg" alt="" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-preview">
+                            <div class="channel-picture-2">
+                                <img src="channel-pictures/Lancelloti.jpg" alt="" class="profile-picture-2">
+                            </div>
+                            <div class="channel-info">
+                                <div class="channel-name">
+                                    Lancelloti
+                                </div>
+    
+                                <div class="subscriber-count">
+                                    162K subscribers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://youtu.be/3NobihsLsZ0?si=nKkyIZwGkVKGqBJT" class="video-title">
+                            How THIS Scene Became a Modern Masterpiece 
+                        </a>
+                
+                        <div class="video-author-container">
+                            <p class="video-author">Lancelloti</p> 
+                            
+                            <div class="verified-container">
+                                <img src="icons/check mark icon.svg" alt="" class="verified-icon">
+                                <div class="video-tooltip">Verified</div>
+                            </div>
+                        </div>
+                
+                        <p class="video-stats">
+                            4.9M views &#183; 4 months ago 
+                        </p>
+                    </div>
+                </div> 
+            </div>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+            
+            <div class="video-preview">
+                <div class="thumbnail-row">
+    
+                    <a href="https://youtu.be/U8F5G5wR1mk?si=Ze5CpD0-jDoxTLWl" class="thumbnail-link">
+                        <img class="thumbnail" src="thumbnails/Kendrick Lamar - tv off (Official Audio).jpg">
+                    </a>
+    
+                    <div class="video-time">3:41</div>
+                </div>
+        
+                <div class="video-info-grid">
+        
+                    <div class="channel-picture">
+    
+                        <a href="https://www.youtube.com/channel/UC3lBXcrKFnFAFkfVk5WuKcQ" class="channel-page-link">
+                            <img src="channel-pictures/Kendrick Lamar.jpg" alt="" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-preview">
+                            <div class="channel-picture-2">
+                                <img src="channel-pictures/Kendrick Lamar.jpg" alt="" class="profile-picture-2">
+                            </div>
+                            <div class="channel-info">
+                                <div class="channel-name">
+                                    Kendrick Lamar
+                                </div>
+    
+                                <div class="subscriber-count">
+                                    17.1M subscribers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://youtu.be/U8F5G5wR1mk?si=Ze5CpD0-jDoxTLWl" class="video-title">
+                            Kendrick Lamar - tv off (Official Audio) 
+                        </a>
+                
+                        <div class="video-author-container">
+                            <p class="video-author">Kendrick Lamar</p> 
+                            
+                            <div class="verified-container">
+                                <img src="icons/verified artist icon.svg" alt="" class="verified-artist-icon">
+                                <div class="video-tooltip">Official Artist Channel</div>
+                            </div>
+                        </div>
+                
+                        <p class="video-stats">
+                            27M views &#183; 1 month ago 
+                        </p>
+                    </div>
+                </div> 
+            </div>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+            
+            <div class="video-preview">
+                <div class="thumbnail-row">
+    
+                    <a href="https://youtu.be/BcN31jstzm0?si=k0U-3YZBRHwVvcoP" class="thumbnail-link">
+                        <img class="thumbnail" src="thumbnails/We Made Our Friend An International Fugitive - Boy Boy.jpg">
+                    </a>
+    
+                    <div class="video-time">30:36</div>
+                </div>
+        
+                <div class="video-info-grid">
+        
+                    <div class="channel-picture">
+    
+                        <a href="https://www.youtube.com/@Boy_Boy" class="channel-page-link">
+                            <img src="channel-pictures/Boy Boy.jpg" alt="" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-preview">
+                            <div class="channel-picture-2">
+                                <img src="channel-pictures/Boy Boy.jpg" alt="" class="profile-picture-2">
+                            </div>
+                            <div class="channel-info">
+                                <div class="channel-name">
+                                    Boy Boy
+                                </div>
+    
+                                <div class="subscriber-count">
+                                    1.15M subscribers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://youtu.be/BcN31jstzm0?si=k0U-3YZBRHwVvcoP" class="video-title">
+                            We Made Our Friend An International Fugitive 
+                        </a>
+                
+                        <div class="video-author-container">
+                            <p class="video-author">Boy Boy</p> 
+                            
+                            <div class="verified-container">
+                                <img src="icons/check mark icon.svg" alt="" class="verified-icon">
+                                <div class="video-tooltip">Verified</div>
+                            </div>
+                        </div>
+                
+                        <p class="video-stats">
+                            1M views &#183; 7 days ago 
+                        </p>
+                    </div>
+                </div> 
+            </div>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+            
+            <div class="video-preview">
+                <div class="thumbnail-row">
+    
+                    <a href="https://youtu.be/YGiDmmo34BQ?si=JlOIX3TkIlkpbV2N" class="thumbnail-link">
+                        <img class="thumbnail" src="thumbnails/Things I hate about college - cooper galanis.jpg">
+                    </a>
+    
+                    <div class="video-time">4:32</div>
+                </div>
+        
+                <div class="video-info-grid">
+        
+                    <div class="channel-picture">
+    
+                        <a href="https://www.youtube.com/@coopergalanis" class="channel-page-link">
+                            <img src="channel-pictures/cooper galanis.jpg" alt="" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-preview">
+                            <div class="channel-picture-2">
+                                <img src="channel-pictures/cooper galanis.jpg" alt="" class="profile-picture-2">
+                            </div>
+                            <div class="channel-info">
+                                <div class="channel-name">
+                                    cooper galanis
+                                </div>
+    
+                                <div class="subscriber-count">
+                                    40.7K subscribers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://youtu.be/YGiDmmo34BQ?si=JlOIX3TkIlkpbV2N" class="video-title">
+                            Things I hate about college
+                        </a>
+                
+                        <p class="video-author">
+                            cooper galanis
+                        </p>
+                
+                        <p class="video-stats">
+                            464K views &#183; 3 months ago 
+                        </p>
+                    </div>
+                </div> 
+            </div>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+            
+            <div class="video-preview">
+                <div class="thumbnail-row">
+    
+                    <a href="https://youtu.be/24GfgNtnjXc?si=lSZIzx6Owes_Kt3P" class="thumbnail-link">
+                        <img class="thumbnail" src="thumbnails/You're Probably Wrong About Rainbows - Veritasium.jpg">
+                    </a>
+    
+                    <div class="video-time">27:11</div>
+                </div>
+        
+                <div class="video-info-grid">
+        
+                    <div class="channel-picture">
+    
+                        <a href="https://www.youtube.com/@veritasium" class="channel-page-link">
+                            <img src="channel-pictures/Veritasium.jpg" alt="" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-preview">
+                            <div class="channel-picture-2">
+                                <img src="channel-pictures/Veritasium.jpg" alt="" class="profile-picture-2">
+                            </div>
+                            <div class="channel-info">
+                                <div class="channel-name">
+                                    Veritasium
+                                </div>
+    
+                                <div class="subscriber-count">
+                                    16.9M subscribers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://youtu.be/24GfgNtnjXc?si=lSZIzx6Owes_Kt3P" class="video-title">
+                            You're Probably Wrong About Rainbows
+                        </a>
+                
+                        <div class="video-author-container">
+                            <p class="video-author">Veritasium</p> 
+                            
+                            <div class="verified-container">
+                                <img src="icons/check mark icon.svg" alt="" class="verified-icon">
+                                <div class="video-tooltip">Verified</div>
+                            </div>
+                        </div>
+                
+                        <p class="video-stats">
+                            4.8M views &#183; 3 weeks ago 
+                        </p>
+                    </div>
+                </div> 
+            </div>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+            
+            <div class="video-preview">
+                <div class="thumbnail-row">
+    
+                    <a href="https://youtu.be/TP_0Vv5F29I?si=OhK1s7uZa0BV4PwQ" class="thumbnail-link">
+                        <img class="thumbnail" src="thumbnails/World First! Bike Flip On A Moving Train - Red Bull.jpg">
+                    </a>
+    
+                    <div class="video-time">5:06</div>
+                </div>
+        
+                <div class="video-info-grid">
+        
+                    <div class="channel-picture">
+    
+                        <a href="https://www.youtube.com/@redbull" class="channel-page-link">
+                            <img src="channel-pictures/Red Bull.jpg" alt="" class="profile-picture">
+                        </a>
+    
+                        <div class="channel-preview">
+                            <div class="channel-picture-2">
+                                <img src="channel-pictures/Red Bull.jpg" alt="" class="profile-picture-2">
+                            </div>
+                            <div class="channel-info">
+                                <div class="channel-name">
+                                    Red Bull
+                                </div>
+    
+                                <div class="subscriber-count">
+                                    20.8M subscribers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="video-info">
+                        <a href="https://youtu.be/TP_0Vv5F29I?si=OhK1s7uZa0BV4PwQ" class="video-title">
+                            World First! Bike Flip On A Moving Train
+                        </a>
+                
+                        <div class="video-author-container">
+                            <p class="video-author">Red Bull</p> 
+                            
+                            <div class="verified-container">
+                                <img src="icons/check mark icon.svg" alt="" class="verified-icon">
+                                <div class="video-tooltip">Verified</div>
+                            </div>
+                        </div>
+                
+                        <p class="video-stats">
+                            4.1M views &#183; 3 months ago 
+                        </p>
+                    </div>
+                </div> 
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,276 @@
+@media (max-width: 1200px) {
+
+    .sidebar-two {
+        z-index: -100;
+    }
+    
+    .sidebar {
+        position: fixed;
+        top: 55px;
+        left: 0;
+        bottom: 0;
+        width: 72px;
+        z-index: 200;
+    
+        background-color: white;
+    
+        padding-top: 8px;
+    }
+    
+    
+    .sidebar-link {
+        height: 74px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 6px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+    
+        cursor: pointer;
+    
+    }
+    .sidebar-link:hover {
+        background-color: rgb(238, 238, 238);
+    }
+    .sidebar-link:active {
+        background-color: rgb(225, 225, 225);
+    }
+    
+    .home-icon, 
+    .subscriptions-icon,
+    .library-icon,
+    .account-icon {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .shorts-icon {
+        height: 30px;
+    }
+    
+    .subscriptions-icon,
+    .library-icon,
+    .account-icon {
+        filter: invert(100%) sepia(0%) saturate(29%) hue-rotate(48deg) brightness(106%) contrast(107%);
+    }
+    
+    .sidebar-link div {
+        font-family: Roboto, Arial;
+        font-size: 10px;
+    }
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+@media (min-width: 1201px) {
+    .sidebar {
+        display: none;
+    }
+
+    .sidebar-two {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 238px;
+        z-index: 201;
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+
+        background-color: white;
+        overflow: scroll;
+
+        padding-top: 8px;
+    }
+
+    .sidebar-two > * {
+        margin: 0 25px 0 13px;
+    }
+
+
+    /* ------------------------------------------------------------------- */
+    .sidebar-two-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 2px;
+    }
+
+    .hamburger-menu-two {
+        margin-right: 17px;
+        border-radius: 50%;
+        padding: 10px 10px;
+
+        cursor: pointer;
+    }
+    .hamburger-menu-two:hover {
+        background-color: rgb(238, 238, 238);
+    }
+    .hamburger-menu-two:active {
+        background-color: rgb(225, 225, 225);
+    }
+
+
+    .youtube-logo-two {
+        height: 20px;
+        cursor: pointer;
+    }
+
+    /* ------------------------------------------------------------------- */
+    .sidebar-two img:not(.youtube-logo-two, .shorts-icon-two, .arrow-icon, .down-arrow-icon) {
+        width: 22px;
+        height: 22px;
+    }
+
+
+    /* ------------------------------------------------------------------- */
+    .sidebar-two-main-section, 
+    .sidebar-two-you-section, 
+    .sidebar-three-you-section, 
+    .sidebar-four-you-section, 
+    .sidebar-six-you-section, 
+    .sidebar-seven-you-section {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        /* row-gap: 4px; */
+    }
+
+    .sidebar-link-two,
+    .sidebar-shorts-link-two,
+    .sidebar-two-you {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+    }
+
+
+    .sidebar-link-two,
+    .sidebar-shorts-link-two {
+        font-size: 14px;
+
+        border-radius: 10px;
+
+        padding: 8px 12px;
+
+        cursor: pointer;
+    }
+    .sidebar-link-two:hover, 
+    .sidebar-shorts-link-two:hover {
+        background-color: rgb(247, 247, 247);
+    }
+    .sidebar-link-two:active, 
+    .sidebar-shorts-link-two:active {
+        background-color: rgb(233, 233, 233);
+    }
+
+    .sidebar-shorts-link-two {
+        padding: 5px 12px 5px 10px;
+    }
+
+    /* ------------------------------------------------------------------- */
+    .subscriptions-icon-two,
+    .your-podcasts-icon,
+    .watch-later-icon {
+        filter: invert(100%) sepia(0%) saturate(29%) hue-rotate(48deg) brightness(106%) contrast(107%);
+    }
+
+
+    .shorts-icon-two {
+        height: 29px;
+    }
+
+    .divider {
+        color: rgb(216, 216, 216);
+    }
+
+
+    /* ------------------------------------------------------------------- */
+    .sidebar-two-you-section, 
+    .sidebar-three-you-section, 
+    .sidebar-four-you-section, 
+    .sidebar-six-you-section {
+        margin-top: -5px;
+    }
+
+    .sidebar-two-you {
+        font-size: 16px;
+        font-weight: 500;
+
+        border-radius: 10px;
+
+        padding: 8px 12px;
+
+        cursor: pointer;
+    }
+
+    .arrow-icon {
+        height: 11px;
+    }
+
+
+    /* ------------------------------------------------------------------- */
+    .sidebar-three-you-section img {
+        border-radius: 50%;
+        filter: none;
+    }
+
+    .down-arrow-icon {
+        transform: rotate(90deg);
+        width: 14px;
+        height: 14px;
+
+        padding-left: 8px;
+    }
+
+
+
+    /* ------------------------------------------------------------------- */
+    .sidebar-four-you-section .gaming-icon {
+        filter: invert(100%) sepia(0%) saturate(29%) hue-rotate(48deg) brightness(106%) contrast(107%);
+    }
+
+
+
+    /* ------------------------------------------------------------------- */
+    .sidebar-six-you-section .gaming-icon {
+        filter: invert(100%) sepia(0%) saturate(29%) hue-rotate(48deg) brightness(106%) contrast(107%);
+    }
+
+
+
+    /* ------------------------------------------------------------------- */
+    .sidebar-seven-you-section {
+        row-gap: 20px;
+    }
+
+    .sidebar-seven-you-section:not(.company) {
+        font-size: 12px;
+        font-weight: 500;
+        color: rgb(105, 105, 105);
+    }
+
+    .sidebar-seven-you-section > *{
+        display: flex;
+        flex-flow: wrap;
+        /* height: 40px; */
+
+        margin-left: 15px;
+        margin-right: 6px;
+    }
+
+    p {
+        margin: 0 8px 2px 0;
+
+        cursor: pointer;
+    }
+
+    .company {
+        color: rgb(179, 179, 179);
+        margin-bottom: 20px;
+    }
+}
